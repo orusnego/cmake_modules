@@ -20,8 +20,8 @@ function(add_libminio INC_DIR LIB_PATH)
         endif()
 
         ExternalProject_Add(libminio_ext
-          GIT_REPOSITORY    git@10.177.32.32:env/libraries/minio_sdk.git
-          GIT_TAG           master
+          GIT_REPOSITORY    git@github.com:orusnego/minio.git
+          GIT_TAG           main
           SOURCE_DIR        ""
           UPDATE_COMMAND ""
           UPDATE_DISCONNECTED 1
